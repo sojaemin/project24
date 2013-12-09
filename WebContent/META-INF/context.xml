@@ -1,0 +1,8 @@
+<Context>
+   <Resource name="jdbc/jspbook" auth="Container" type="javax.sql.DataSource"
+               maxActive="50" maxIdle="30" maxWait="10000"
+               username="project24jsp" password="sojaemin76" 
+               driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://localhost/project24jsp"/>
+ 
+</Context>

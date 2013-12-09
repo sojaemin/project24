@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>project24</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <resource-ref>
+    <description>MySQL Datasource Desc</description>
+    <res-ref-name>jdbc/jspbook</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  <servlet>
+    <description>all about member</description>
+    <display-name>Member</display-name>
+    <servlet-name>MemeberController</servlet-name>
+    <servlet-class>controller.member</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemeberController</servlet-name>
+    <url-pattern>/member.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>all about project</description>
+    <display-name>Project</display-name>
+    <servlet-name>ProjectController</servlet-name>
+    <servlet-class>controller.project</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProjectController</servlet-name>
+    <url-pattern>/project.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>all about apply</description>
+    <display-name>Apply</display-name>
+    <servlet-name>ApplyController</servlet-name>
+    <servlet-class>controller.apply</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ApplyController</servlet-name>
+    <url-pattern>/apply.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>all about message</description>
+    <display-name>Message</display-name>
+    <servlet-name>MessageController</servlet-name>
+    <servlet-class>controller.message</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MessageController</servlet-name>
+    <url-pattern>/message.do</url-pattern>
+  </servlet-mapping>
+</web-app>
